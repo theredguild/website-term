@@ -8,7 +8,7 @@ export const Ps1 = () => {
         {config.ps1_username}
       </span>
       <span className="text-light-gray dark:text-dark-gray">@</span>
-      <span className="text-light-green dark:text-dark-green">
+      <span className="text-light-red dark:text-dark-red">
         {config.ps1_hostname}
       </span>
       <span className="text-light-gray dark:text-dark-gray">:$ ~ </span>

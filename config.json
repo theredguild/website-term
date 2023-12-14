@@ -1,25 +1,27 @@
 {
-  "readmeUrl": "https://raw.githubusercontent.com/cveinnt/cveinnt/master/README.md",
-  "title": "LiveTerm",
-  "name": "John Doe",
-  "ascii": "liveterm",
+  "readme_url": "https://raw.githubusercontent.com/theredguild/website-term/main/README.md",
+  "title": "The Red Guild's landing terminal",
+  "name": "The Red Guild",
   "social": {
-    "github": "github",
-    "linkedin": "linkedin"
+    "github": "theredguild",
+    "x": "theredguild",
+    "youtube": "watchtheredguild",
+    "blog": "https://blog.theredguild.org/",
+    "about": "https://blog.theredguild.org/the-truth-of-the-red-guild/"
   },
-  "email": "contact@email.com",
-  "ps1_hostname": "liveterm",
-  "ps1_username": "visitor",
-  "repo": "https://github.com/Cveinnt/LiveTerm",
-  "resume_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Resume.pdf",
-  "donate_urls": {
-    "paypal": "https://paypal.me/cveinnt",
-    "patreon": "https://patreon.com/cveinnt"
+  "email": "hello@theredguild.org",
+  "ps1_hostname": "trg",
+  "ps1_username": "wanderer",
+  "id": "uid=1000(wanderer) gid=1000(wanderer) groups=1000(wanderer),3(sys),90(network),98(power),991(lp),998(wheel),1337(trg)",
+  "ezine_url": "https://raw.githubusercontent.com/theredguild/ezines/main/",
+  "support_urls": {
+    "mainnet": "0x133730000000000000000000DEADBEEF",
+    "optimism": "0xBABABABACAFEBABE0000000000000000"
   },
   "colors": {
     "light": {
-      "background": "#FBF1C9",
-      "foreground": "#3C3836",
+      "background": "#E5E9F0",
+      "foreground": "#18202",
       "yellow": "#D79921",
       "green": "#98971A",
       "gray": "#7C6F64",
@@ -27,9 +29,9 @@
       "red": "#CA2124"
     },
     "dark": {
-      "background": "#2E3440",
+      "background": "#182029",
       "foreground": "#E5E9F0",
-      "yellow": "#5E81AC",
+      "yellow": "#ffb86c",
       "green": "#A3BE8C",
       "gray": "#88C0D0",
       "blue": "#EBCB8B",

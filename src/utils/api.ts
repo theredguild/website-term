@@ -8,8 +8,8 @@ export const getProjects = async () => {
   return data;
 };
 
-export const getReadme = async () => {
-  const { data } = await axios.get(config.readmeUrl);
+export const getWebContent = async (content) => {
+  const { data } = await axios.get(content);
   return data;
 };
 
@@ -28,3 +28,5 @@ export const getQuote = async () => {
     quote: `“${data.content}” — ${data.author}`,
   };
 };
+
+export { config };

@@ -1,9 +1,10 @@
-// // List of commands that require API calls
+// List of commands that require API calls
 
 import { getProjects } from '../api';
 import { getQuote } from '../api';
-import { getReadme } from '../api';
+import { getWebContent } from '../api';
 import { getWeather } from '../api';
+import { config } from '../api';
 
 export const projects = async (args: string[]): Promise<string> => {
   const projects = await getProjects();
@@ -21,15 +22,15 @@ export const quote = async (args: string[]): Promise<string> => {
 };
 
 export const readme = async (args: string[]): Promise<string> => {
-  const readme = await getReadme();
-  return `Opening GitHub README...\n
+  const readme = await getWebContent(`${config.readme_url}`);
+  return `Opening website's GitHub README...\n
   ${readme}`;
 };
 
 export const weather = async (args: string[]): Promise<string> => {
   const city = args.join('+');
   if (!city) {
-    return 'Usage: weather [city]. Example: weather casablanca';
+    return 'Usage: weather [city]. Example: weather buenos aires';
   }
   const weather = await getWeather(city);
   return weather;

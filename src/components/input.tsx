@@ -27,11 +27,6 @@ export const Input = ({
       setLastCommandIndex(0);
     }
 
-    if (event.key === 'l' && event.ctrlKey) {
-      event.preventDefault();
-      clearHistory();
-    }
-
     if (event.key === 'Tab') {
       event.preventDefault();
       handleTabCompletion(command, setCommand);
